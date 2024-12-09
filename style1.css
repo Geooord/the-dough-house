@@ -1,0 +1,168 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: #FEFAE0;
+    padding:0px;
+    margin: 0px auto;
+    overflow: hidden;
+    text-align: center;
+}
+.navbar a{
+    color:#663e16;
+    text-decoration: none;
+    width: 100;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 23px 23px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: #ebdbb3;
+}
+.navbar li{
+    display: inline-block;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Inter", sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#fefae0, #d4a373);
+}
+
+.card-wrapper {
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list .card-item {
+    list-style: none;
+}
+
+.card-list .card-item .card-link {
+    user-select: none;
+    width: 400px;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #914800;
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+    color: #914800;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18;
+    background: #fefae0;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .badge.Creamy-Pumpkin-Spice-Latte {
+    color: #914800;
+    background: #d4a373;
+}
+
+.card-list .card-link .badge.Choux-a-la-creme {
+    color: #914800;
+    background: #d4a373;
+}
+
+.card-list .card-link .badge.Chocolate-Crepe-with-Vanilla-Ice-Cream {
+    color: #914800;
+    background: #d4a373;
+}
+
+.card-list .card-link .badge-Blueberry-Pie {
+    color: #914800;
+    background: #d4a373;
+}
+
+
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    color: black;
+    font-weight: 600;
+
+}
+
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    color: #914800;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #914800;
+    transform: rotate(-45deg); 
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    color: #ffffff;
+    background: #914800;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #914800;
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+    color: #914800;
+    margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
